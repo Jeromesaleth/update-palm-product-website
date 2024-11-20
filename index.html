@@ -1,0 +1,1151 @@
+
+<!-- file:///C:/Users/user/Downloads/malligai-palm-products-main/malligai-palm-products-main/index.html#products -->
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Malligai Palm Products</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+
+
+    <style>
+
+
+
+        .service-item {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-item .p-4 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .video-wrapper {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 2;
+            
+        }
+
+        /* h1, p {
+            margin: 0;
+            color:white;
+        } */
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            background-color: #ffffff;
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .1);
+        }
+
+        /* Optional: Style the video-wrapper if necessary */
+        .video-wrapper {
+            position: relative;
+            height: 100vh;
+        }
+
+        #background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-top: 70px;
+        }
+
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 108px;
+            right: 47px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 4px 8px #25D366;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #fe8800;
+        }
+
+/* Gallery images */
+
+/* Image Zoom Effect */
+.gallery img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+}
+
+.gallery a:hover img {
+    transform: scale(1.1);
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #0d6efd;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.section-title::before {
+    left: -40px;
+    width: 60px;
+}
+
+.section-title::after {
+    right: -40px;
+    width: 60px;
+}
+
+@media (max-width: 768px) {
+    .section-title::before, .section-title::after {
+        width: 40px;
+    }
+}
+
+/* Custom styles for image g4 */
+.gallery .g4-img {
+    height: 100%; /* Full height for the container */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+@media (max-width: 320px) {
+    .home-text {
+        font-size: 11px;
+    }
+    .home-img {
+        /* width: 80%; Reduce image width */
+        margin: 0 17px; /* Center the image */
+    }
+    .text-primary{
+        color: #fe8800 !important;
+    font-size: 14px;
+    }
+    .contact-us {
+        padding-left: 114px;
+        margin-left: 91px;
+    }
+    .gmail {
+        font-size: 10px;
+    }
+    .navbar-light .navbar-toggler {
+        
+        margin-left: 260px;
+        margin-top: -43px;
+    }
+    
+    
+        /* .sticky-top {
+            position: sticky;
+            top: 0;
+    } */
+    
+}
+/* 
+@media  (max-height: 320px) {
+   .palm-tree {
+        height: 20px;
+    }
+} */
+
+/* @media  (max-width: 320px) {
+    .text-primary img{
+        color: #fe8800 !important;
+    font-size: 16px;
+    }
+} */
+
+.palm-tree {
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    height: 715px; /* Sets the fixed height */
+    object-fit: cover; /* Ensures the image maintains its proportions while covering the container */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .palm-tree {
+        object-fit: cover;
+        width: 100%;
+        height: 300px; /* Reduce height for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .palm-tree {
+        height: 400px; /* Further reduce height for mobile devices */
+    }
+}
+
+
+
+    </style>
+    
+    
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg  navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top">
+            <!-- Added sticky-top class -->
+            <a href="" class="navbar-brand p-0">
+                <h4 class="text-primary m-0"><img src="img/logo.png" /></i> MALLIGAI PALM PRODUCTS</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About Us</a>
+                    <a href="#products" class="nav-item nav-link">Products</a>
+                    <a href="#gallery" class="nav-item nav-link">Gallery</a>
+                    <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="home">
+            <div>
+                <img class="home-img" style="width: 100%; height: 100%;"
+                    src="img/main-bg.jpg"
+                    alt="" style="object-fit: cover;">
+                <!-- <video autoplay muted loop id="background-video">
+                <source src="videos/palm_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+                <div class="overlay">
+                    <h1 class="home-text" style="color: white;" >Bring the Beauty of Palm into Your Home</h1>
+                    <!-- <p>Palm products are derived from the versatile palm tree and provide sustainable solutions for various industries.</p>
+                <p>They are known for their eco-friendly characteristics, contributing to renewable resource use and supporting local economies.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navbar & Hero End -->
+
+
+    <!-- About Start -->
+    <div id="about">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="palm-tree  img-fluid position-absolute w-100 h-70" style="max-width: 100%;
+                                height: 685px;" src="img/palm-tree-updated.jpg" alt=""
+                                style="object-fit: cover;">
+                        </div>
+                    </div> -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="palm-tree img-fluid position-absolute" 
+                                 src="img/palm-tree-updated.jpg" 
+                                 alt="Palm Tree">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="section-title bg-white text-start text-primary pe-3">About Us</h2>
+                        <h4 class="mb-4">Welcome to <span class="text-primary">Malligai Palm Products</span></h4>
+                        <p class="mb-4">
+                            Since 2014, Malligai Palm Products has been dedicated to producing high-quality palm products while creating opportunities for women to thrive in the workforce. Founded as a family business, we’ve grown with a strong sense of purpose: to improve lives, create jobs, and bring sustainable products to the market.
+
+Our journey started with a vision to offer not just premium palm products, but also meaningful work that empowers women in our community. By providing a platform for women to contribute, learn, and grow, we’ve seen how this opportunity transforms lives, enhances the quality of life, and strengthens the fabric of our business. 
+
+At Malligai Palm Products, we believe that the success of our business is rooted in the success of our people.We value hard work, innovation, and above all, community. Our commitment to sustainable practices and supporting women workers is at the heart of everything we do
+                        </p>
+                        <p class="mb-4" style="font-weight: 900; color: rgb(0, 0, 0);">
+                            We are proud to have created a work environment where women can build careers, provide for their families, and play an essential role in our growth. The positive impact of these opportunities extends far beyond the workplace, improving the lives of everyone connected to our business.
+
+                        </p><br>
+
+                        <br>
+                        Thank you for choosing Malligai Palmleaf Products  where quality, opportunity, and community come together.
+                        <br>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="#products">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div id="products">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Products</h6>
+                    <h1 class="mb-5">Our Products</h1>
+                </div>
+                <div class="row g-4">
+
+                    <div style="height: 400px;" class="col-lg-3 col-sm-6">
+                        <a href="TraditionalSugars.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="photos/karupatti-main.jpeg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Traditional Sugars</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="height: 400px;" class="col-lg-3 col-sm-6">
+                        <a href="keychain.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="img/palmproduct1.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Keychain</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="winnoingBasket.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="img/palmproduct5.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Winnowing Basket</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="container.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="images/container1.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5> box </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="basket.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="images/basket5.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Basket</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="bag.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="newImg/white-bag.jpg"Winnowing Basket"
+                                    style="width: 100%; height: 80%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Bag</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="playToys.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="img/palmproduct19.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Toys</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!-- <div class="col-lg-3 col-sm-6">
+                        <a href="pencilBouch.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="photos/pencil-pouch.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Pencil Pouch</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="pencilBouch.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="photos/purse.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 80%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Pouch & Purse</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="flowerTray.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="images/round-tray.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 80%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Tray</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="gift.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="newImg/jewel-box-color.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Jewel box</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="fan.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="newImg/fan2.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 80%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Fan</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="mat.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="newImg/natural-colormat.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 80%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5> Mat</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="decoration.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="images/doubleparrot-wreath.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 80%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>decoration Items</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="hat.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="images/hat.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Hat</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="undial.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="photos/undial.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>undial</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="others.html">
+                            <div class="service-item rounded"
+                                style="overflow: hidden; box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: background 0.5s, transform 0.3s;">
+                                <img class="img-fluid" src="photos/iddiappa-thattu.jpg" alt="Winnowing Basket"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="p-4 text-center">
+                                    <h5>Other Items</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Add custom inline styles in <style> for hover effect -->
+    <style>
+        /* Hover effects for card */
+        .service-item:hover {
+            background-color: #fe8800;
+            transform: scale(1.05);
+        }
+
+        .service-item:hover h5,
+        .service-item:hover button {
+            color: #fff !important;
+        }
+
+        /* Hover effect for button */
+        .service-item button:hover {
+            background-color: #0056b3;
+            /* Darker blue for hover */
+            color: #fff;
+        }
+    </style>
+
+
+
+
+
+
+    <!-- Service End -->
+
+
+    <!-- Destination Start -->
+    <!-- <div id="gallery">
+        <div class="container-xxl py-5 destination">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Gallery</h6>
+                    <h1 class="mb-5">Popular Gallery</h1>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                        <a class="position-relative d-block overflow-hidden collage-item" href="">
+                            <img class="img-fluid" src="img/g5.jpg" alt="">
+
+                        </a>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="row g-3">
+                            <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                                <a class="position-relative d-block overflow-hidden collage-item" href="">
+                                    <img class="img-fluid" src="img/g2.jpg" alt="">
+
+                                </a>
+                            </div>
+
+                           
+
+                            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                                <a class="position-relative d-block overflow-hidden collage-item" href="">
+                                    <img class="img-fluid" src="img/g1.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                                <a class="position-relative d-block overflow-hidden collage-item" href="">
+                                    <img class="img-fluid" src="img/g3.jpg" alt="">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                        <a class="position-relative d-block h-100 overflow-hidden collage-item" href="">
+                            <img class="img-fluid position-absolute w-100 " src="img/g4.jpg" alt=""
+                                style="object-fit: cover;">
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container-xxl">
+            <div class="container">
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="4s">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/image-3.jpg" alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/image-4.jpg" alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/image-5.jpg" alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+     <!-- Gallery Section -->
+     <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Gallery</h6>
+                <h1 class="mb-5">Popular Gallery</h1>
+            </div>
+            <div class="row g-3 gallery">
+                <!-- Main Image -->
+                <div class="col-lg-12 col-md-12 wow animate__animated animate__zoomIn" data-wow-duration="2s data-wow-delay="1s">
+                    <a class="d-block overflow-hidden" href="#">
+                        <img class="img-fluid" src="img/g5.jpg" alt="Gallery Image 1">
+                    </a>
+                </div>
+                <!-- Sub Images -->
+                <div class="col-lg-8 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow animate__animated animate__zoomIn" data-wow-delay="200s">
+                            <a class="d-block overflow-hidden" href="#">
+                                <img class="img-fluid" src="img/g2.jpg" alt="Gallery Image 2">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                            <a class="d-block overflow-hidden" href="#" >
+                                <img class="img-fluid" src="img/g4.jpg" alt="Gallery Image 3" style="height: 47.5vh;">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                            <a class="d-block overflow-hidden" href="#">
+                                <img class="img-fluid" src="img/g3.jpg" alt="Gallery Image 4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__zoomIn" data-wow-delay="0.5s" style="min-height: 350px;">
+                    <a class="d-block h-100 overflow-hidden" href="#">
+                        <img class="img-fluid w-100 h-100 position-relative" src="img/g1.jpg" alt="Gallery Image 5" style="object-fit: cover;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Images -->
+    <!-- <div class="container-xxl">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+                    <a class="d-block overflow-hidden" href="#">
+                        <img class="img-fluid" src="img/image-3.jpg" alt="Gallery Image 6">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                    <a class="d-block overflow-hidden" href="#">
+                        <img class="img-fluid" src="img/image-4.jpg" alt="Gallery Image 7">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                    <a class="d-block overflow-hidden" href="#">
+                        <img class="img-fluid" src="img/image-5.jpg" alt="Gallery Image 8">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- WOW.js -->
+    
+   
+
+
+    <div id="contact">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
+                    <h1 class="mb-5">Contact Us For Any Query</h1>
+                </div>
+                <div class="row g-4">
+                    <!-- Contact Info Section -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5>Get In Touch</h5>
+                        <p class="mb-4">Feel free to reach out to us for any queries or assistance. We are here to help
+                            you.
+                        </p>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                                style="width: 50px; height: 50px;">
+                                <i class="fa fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="text-primary">Office</h5>
+                                <p class="mb-0">4/121 Kovil Street, Sethukuvaithan <br style="padding-left: 50px;">Thoothukudi Tamilnadu </p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                                style="width: 50px; height: 50px;">
+                                <i class="fa fa-phone-alt text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="text-primary">Mobile</h5>
+                                <p class="mb-0">+91 9976696048</p>
+                                <!-- <p class="mb-0">+91 8695868186</p> -->
+
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                                style="width: 50px; height: 50px;">
+                                <i class="fa fa-envelope-open text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="text-primary">Email</h5>
+                                <p class="mb-0">malligaipalmleafproducts@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Section -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <iframe class="position-relative rounded w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3944.803527249031!2d78.02631777501404!3d8.614852991430899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzYnNTMuNSJOIDc4wrAwMSc0NC4wIkU!5e0!3m2!1sen!2sin!4v1731345732338!5m2!1sen!2sin"
+                            frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0">
+                        </iframe>
+                    </div>
+
+                    <!-- Contact Form Section -->
+                    <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <form id="contact-form" role="form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="subject" class="form-control" id="subject"
+                                            placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" name="message" placeholder="Leave a message here"
+                                            id="message" style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit"
+                                        onclick="sendMail(event)">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="testimonials">
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Testimonials</h6>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel position-relative">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item bg-white text-center border p-4">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/test-1.png"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Emily Parker</h5>
+                        <p>London, UK</p>
+                        <p class="mb-0">Palm leaf handmade bags for their eco-friendly nature, lightweight durability, and unique handcrafted designs that add a rustic charm to their style. Many appreciate their versatility for uses like shopping, beach outings, or home storage, while the sustainable material appeals to environmentally conscious buyers.</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item bg-white text-center border p-4">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/test-2.png"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Michael Johnson</h5>
+                        <p>Toronto, Canada</p>
+                        <p class="mt-2 mb-0">"Switching to palm products was one of the best decisions I’ve made. Not only are they sustainably sourced, but the quality is outstanding. The shampoo and conditioner make my hair feel rejuvenated and full of life—like a mini spa treatment every day!"</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item bg-white text-center border p-4">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/test-3.png"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Sophia Lee</h5>
+                        <p>Sydney, Australia</p>
+                        <p class="mt-2 mb-0">"I have very sensitive skin and was hesitant to try new products, but I’m so glad I took the chance with these! The gentle, palm-derived ingredients leave my skin feeling calm and balanced. No more redness or irritation—it’s been a dream!"</p>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-item bg-white text-center border p-4">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/test-2.png"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">David Martinez</h5>
+                        <p>Barcelona, Spain</p>
+                        <p class="mt-2 mb-0">"I was surprised at how affordable these products are given their quality. I’ve been using the palm body lotion and hand cream, and the results are fantastic. It feels luxurious and rich without the high-end price tag. Highly recommend!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">MALLIGAI PALM PRODUCTS</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="contact-us col-lg-3 col-md-6" style="margin-left: -91px;">
+                    <h4 class="text-white mb-3">Contact Us</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>4/121 Kovil Street, Sethukuvaithan Thoothukudi Tamilnadu </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>+91 9976696048  <!--<br> +91 8695868186 -->
+                    </p>
+
+                    <p class="gmail mb-2" style="font-size: 15px;"><i class=" gamil-icon fa fa-envelope me-3"></i>malligaipalmleafproducts@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a> -->
+                        <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/profile.php?id=100021961691604&mibextid=ZbWKwL" ><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" target="_blank" href="https://youtube.com/@dyana-f6b?si=hOBbzWtYKDBSPYcz"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.instagram.com/malligai_palmleaf_products/"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/fan1.jpg " alt=""
+                                style="width: 100%;height:10vh;">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/box.jpg" alt=""
+                                style="width: 100%;height:10vh;">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="images/bag1.jpg" alt=""
+                                style="width: 100%;height:10vh;">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="photos/handle-pouch.jpg" alt=""
+                                style="width: 100%;height:10vh;">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="newImg/white-bag.jpg" alt=""
+                                style="width: 100%;height:10vh;">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/palmGift.jpeg" alt=""
+                                style="width: 100%;height:10vh;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Stay Updated</h4>
+                    <p>Subscribe to our newsletter and be the first to know about exclusive offers, travel tips, and
+                        exciting destinations!</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <!-- <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign
+                            Up</button> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#" style="text-decoration: none;">Malligai Palm Products
+                        </a>, All Right Reserved.
+
+                        <!--/* This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. */-->
+                        Designed By <a class="border-bottom" href="https://vosatech.com" target="_blank">Vosa Tech Software
+                            Solutions</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- 6380322818 -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="https://wa.me/+919976696048?text=Hello, I would like to inquire about your services."
+        class="btn btn-lg btn-success btn-lg-square whatsapp-btn back-to-top" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+   
+    <script>
+        $(document).ready(function () {
+            $(".testimonial-carousel").owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                items: 1
+            });
+        });
+
+
+
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("t1R-Lvp-HaqPUqDKC"); // Your EmailJS Public Key
+    
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            emailjs.sendForm('service_cxwtw1w', 'template_44dcm2r', this)
+                .then(function(response) {
+                    console.log('Sent successfully', response);
+                    alert('Email sent successfully!');
+                }, function(error) {
+                    console.error('Failed to send', error);
+                    alert('Failed to send email.');
+                });
+        });
+    
+        </script>
+
+</body>
+
+</html>

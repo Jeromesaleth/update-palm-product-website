@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Leaf container Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Add fade-in animation */
+        .product-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .product-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-card img {
+            object-fit: cover;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Palm Products</h1>
+    </header>
+
+    <!-- Product Section -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 400px;">
+                    <img src="images/doubleparrot-wreath.jpg" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">1. Wall hanging</h5>
+                        <p class="card-text">Beautifully crafted wall hangings that add warmth, texture, and personality to your walls.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 400px;">
+                    <img src="images/maalai1.jpg" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">2. Garland </h5>
+                        <p class="card-text">Garlands are used as gifts, offerings, and souvenirs. They can also be used to decorate houses and for religious purposes. These Garlands that are made of palm leaves won't dry and can be used for a long time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 400px;">
+                    <img src="images/maalai2.jpg" class="card-img-top" alt="Palm Basket">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">3. Garland</h5>
+                        <p class="card-text">Garlands are used as gifts, offerings, and souvenirs. They can also be used to decorate houses and for religious purposes. These Garlands that are made of palm leaves won't dry and can be used for a long time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 400px;">
+                    <img src="photos/rose.jpg" class="card-img-top" alt="Palm Basket">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">4. Rose</h5>
+                        <p class="card-text">A rose made from palm leaves is a handcrafted, eco-friendly decorative item, where the natural texture and color of palm leaves are shaped into a rose, offering a sustainable and rustic alternative to traditional fabric or paper flowers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 400px;">
+                    <img src="photos/three-rose.jpg" class="card-img-top" alt="Palm Basket">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">5. Three rose</h5>
+                        <p class="card-text">A three rose made from palm leaves is a decorative arrangement of three handcrafted roses, created using woven palm leaves, offering an eco-friendly and rustic alternative to traditional floral designs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 400px;">
+                    <img src="photos/flower-bunch.jpg" class="card-img-top" alt="Palm Basket">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">6. Flower bunch</h5>
+                        <p class="card-text">A flower bunch made from palm leaves is a bundle of intricately crafted flowers, designed from woven palm leaves, offering a rustic and eco-friendly alternative to traditional artificial flowers. It provides a natural gifts, or ceremonial purposes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 400px;">
+                    <img src="photos/bouquet.jpg" class="card-img-top" alt="Palm Basket">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">7. Bouquet</h5>
+                        <p class="card-text">Bouquet that is made of palm leaves.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 400px;">
+                    <img src="photos/plant-flower-hanging.jpg" class="card-img-top" alt="Palm Basket">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">8. Hanging plant pot</h5>
+                        <p class="card-text">Hanging plant pots are best suited for balcony, indoor as well as outdoor gardening.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 400px;">
+                    <img src="photos/decorative-string-set.jpg" class="card-img-top" alt="Palm Basket">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">9. Decorative string set </h5>
+                        <p class="card-text">Decorative string that is made of palm leaves.</p>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <!-- Add more products as needed, each wrapped in .product-card -->
+        </div>
+    </div>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add animation effect when elements come into view
+        document.addEventListener("DOMContentLoaded", function() {
+            const productCards = document.querySelectorAll(".product-card");
+
+            const showProductCards = () => {
+                productCards.forEach(card => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight;
+
+                    if (cardPosition < screenPosition - 50) {
+                        card.classList.add("visible");
+                    }
+                });
+            };
+
+            // Run on page load
+            showProductCards();
+
+            // Run on scroll
+            window.addEventListener("scroll", showProductCards);
+        });
+    </script>
+</body>
+</html>

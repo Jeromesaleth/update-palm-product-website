@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Leaf Play Toys Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Add fade-in animation */
+        .product-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .product-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-card img {
+            object-fit: cover;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Palm Products</h1>
+    </header>
+
+    <!-- Product Section -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 420px;">
+                    <img src="newImg/ball-rattle.jpg" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">1. Ball rattle</h5>
+                        <p class="card-text">A baby rattle is a small, handheld toy designed for infants, typically producing sound when shaken, helping to stimulate their senses.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 420px;">
+                    <img src="newImg/dog-toy.jpg" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">2. Toy cats and dogs</h5>
+                        <p class="card-text">Cat and dog toys for children to play.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 420px;">
+                    <img src="newImg/five-flower-rattle.jpg" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">3. Five flower rattle</h5>
+                        <p class="card-text">A five-flower rattle is a baby toy featuring five colorful flower-shaped designs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 420px;">
+                    <img src="newImg/one-flower-rattle.jpg" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">4. One flower rattle</h5>
+                        <p class="card-text">A one-flower rattle is a baby toy shaped like a single flower, with a handle and a rattle mechanism inside that produces sound when shaken. It is designed to engage babies with its vibrant colors and gentle noise, supporting sensory development and motor skills.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 420px;">
+                    <img src="newImg/One-stick-rattle.jpg" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">5. One Stick Rattle</h5>
+                        <p class="card-text">A one-stick rattle is a simple baby toy consisting of a single handle with a rattle mechanism at the top, often designed with colorful beads or objects inside that make noise when shaken, helping to engage and entertain babies while promoting sensory development.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm" style="height: 420px;">
+                    <img src="newImg/three-stick-rattle.jpg" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">6. Three stick rattle</h5>
+                        <p class="card-text">A three-stick rattle is a baby toy featuring three interconnected handles or sticks, each with a rattling element that creates noise when shaken. It helps engage babies with its sound and colorful design, promoting sensory development and hand-eye coordination.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add animation effect when elements come into view
+        document.addEventListener("DOMContentLoaded", function() {
+            const productCards = document.querySelectorAll(".product-card");
+
+            const showProductCards = () => {
+                productCards.forEach(card => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight;
+
+                    if (cardPosition < screenPosition - 50) {
+                        card.classList.add("visible");
+                    }
+                });
+            };
+
+            // Run on page load
+            showProductCards();
+
+            // Run on scroll
+            window.addEventListener("scroll", showProductCards);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Leaf Pencil Bouch Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Add fade-in animation */
+        .product-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .product-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-card img {
+            object-fit: cover;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Palm Products</h1>
+    </header>
+
+    <!-- Product Section -->
+    <div class="container py-5">
+        <div class="row g-4">
+           
+
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm">
+                    <img src="img/Palm-leaf-plates.webp" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">1. Plate</h5>
+                        <p class="card-text">A plate is a flat, shallow vessel used to hold and serve food during meals.</p>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add animation effect when elements come into view
+        document.addEventListener("DOMContentLoaded", function() {
+            const productCards = document.querySelectorAll(".product-card");
+
+            const showProductCards = () => {
+                productCards.forEach(card => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight;
+
+                    if (cardPosition < screenPosition - 50) {
+                        card.classList.add("visible");
+                    }
+                });
+            };
+
+            // Run on page load
+            showProductCards();
+
+            // Run on scroll
+            window.addEventListener("scroll", showProductCards);
+        });
+    </script>
+</body>
+</html>

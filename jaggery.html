@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaggery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Add fade-in animation */
+        .product-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .product-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-card img {
+            object-fit: cover;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1> Jaggery Palm Products</h1>
+    </header>
+
+    <!-- Product Section -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm">
+                    <img src="img/palmproduct1.jpg" class="card-img-top" alt="Palm Keychain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Palm Keychain</h5>
+                        <p class="card-text">Eco-friendly keychain handcrafted from natural palm leaves.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm">
+                    <img src="img/palmproduct2.jpg" class="card-img-top" alt="Palm Basket">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Palm Basket</h5>
+                        <p class="card-text">Handcrafted palm basket, ideal for storage and decoration.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm">
+                    <img src="img/palmproduct3.jpg" class="card-img-top" alt="Palm Plate">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Palm Plate</h5>
+                        <p class="card-text">Sustainable palm leaf plate, perfect for serving food at eco-friendly events.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm">
+                    <img src="img/palmproduct4.jpg" class="card-img-top" alt="Palm Mat">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Palm Mat</h5>
+                        <p class="card-text">Traditional palm mat, great for home decor and outdoor settings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-lg-4 col-md-6 product-card">
+                <div class="card shadow-sm">
+                    <img src="img/palmproduct5.jpg" class="card-img-top" alt="Palm Bag">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Palm Bag</h5>
+                        <p class="card-text">Stylish bag made from woven palm leaves, perfect for daily use.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more products as needed, each wrapped in .product-card -->
+        </div>
+    </div>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add animation effect when elements come into view
+        document.addEventListener("DOMContentLoaded", function() {
+            const productCards = document.querySelectorAll(".product-card");
+
+            const showProductCards = () => {
+                productCards.forEach(card => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight;
+
+                    if (cardPosition < screenPosition - 50) {
+                        card.classList.add("visible");
+                    }
+                });
+            };
+
+            // Run on page load
+            showProductCards();
+
+            // Run on scroll
+            window.addEventListener("scroll", showProductCards);
+        });
+    </script>
+</body>
+</html>
